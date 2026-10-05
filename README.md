@@ -7,8 +7,9 @@ supported by the mods' authors. No game files are included: you need your own co
 | Mod | Author | Source | License |
 | --- | --- | --- | --- |
 | Minecraft Ring | siddoff | [siddoff/Minecraft-Ring](https://github.com/siddoff/Minecraft-Ring) | MIT |
+| sm64.dll for Mario 64 in Minecraft | Zckyy, libsm64 | [Zckyy/mario64-in-minecraft](https://github.com/Zckyy/mario64-in-minecraft), [libsm64](https://github.com/libsm64/libsm64) | libsm64's license; built from the SM64 decompilation |
 
-Each release zip contains the mod's license and third-party notices.
+Each release zip contains the mod's license and third-party notices. sm64.dll holds no Nintendo art, sound or music: those come from the player's own ROM.
 
 ## Rebuilding
 
@@ -18,4 +19,8 @@ When a mod updates, rebuild it and upload a new release:
 .\scripts\build-minecraft-ring.ps1 -Release
 ```
 
-The release tag is `minecraft-ring-v<version>`. Chimera picks up the newest one on the next Play.
+```powershell
+.\scripts\build-sm64.ps1 -Release
+```
+
+Release tags are `minecraft-ring-v<version>` and `sm64-libsm64-<commit>`. Chimera picks up the newest one on the next Play.
